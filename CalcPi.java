@@ -3,10 +3,12 @@ public class CalcPi {
 	public static void main(String [] args) { 
 
 	 int input = Integer.parseInt(args[0]);
-	 if (input <= 1) {
-		System.out.println("Value not valid");
-		return;	
-	 }
+	 if (input == 1) {
+		System.out.println("pi according to Java: 3.141592653589793");
+		System.out.println("pi, approximated: 4.0");
+		return;
+	}
+	
 
 	 double sum = 1;
 	 double denominator = 3;
@@ -25,7 +27,8 @@ public class CalcPi {
 		}
 	 }
 	 System.out.println("pi according to Java: 3.141592653589793");
-	 System.out.println("pi, approximated: " + sum * 4.0);
+     System.out.printf("pi, approximated: %.15f\n", sum * 4.0);
+
 	}
 }
 /* % java CalcPi 10
