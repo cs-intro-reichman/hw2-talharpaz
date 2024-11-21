@@ -11,6 +11,7 @@ public class Collatz {
 			if (num == 1) {
 				System.out.print(1 + " ");
 				num =4;
+				steps++;
 			}
 
 
