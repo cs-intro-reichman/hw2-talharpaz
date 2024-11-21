@@ -5,7 +5,7 @@ public class CalcPi {
 	 int input = Integer.parseInt(args[0]);
 	 if (input == 1) {
 		System.out.println("pi according to Java: 3.141592653589793");
-		System.out.println("pi, approximated: 4.0");
+		System.out.println("pi, approximated:     4.0");
 		return;
 	}
 	
